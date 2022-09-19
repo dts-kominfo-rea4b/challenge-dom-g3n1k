@@ -59,7 +59,7 @@
       <!-- TODO: Buatlah sebuah input bertipe text dengan id todo-input -->
       <input type="text" value="" id="todo-input" />
       <!-- TODO: Buatlah sebuah button dengan id todo-submit -->
-      <button onclick="" id="todo-submit">Submit</button>
+      <button id="todo-submit">Submit</button>
       
       <!-- Section output -->
       <!-- TODO: Buatlah sebuah <ul> dengan id todo-output -->
@@ -98,7 +98,7 @@
       
       // TODO: register event onkeypress / addEventListener untuk input
       // sehingga saat di input ditekan enter akan menjalankan fungsi fnClickHandler juga
-      input.addEventListener('keyup', (event) => {
+      input.addEventListener('keypress', (event) => {
         if(event.key === 'Enter'){
           fnClickHandler(input.value);
         }
